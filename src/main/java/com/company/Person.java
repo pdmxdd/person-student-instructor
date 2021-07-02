@@ -33,4 +33,12 @@ public class Person {
     public String getInitials() {
         return this.firstName.substring(0, 1) + "." + this.lastName.substring(0, 1) + ".";
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }

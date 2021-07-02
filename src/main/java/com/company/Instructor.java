@@ -29,4 +29,11 @@ public class Instructor extends Person {
     public String teach() {
         return this.getFullName() + " is now teaching " + this.course.getName();
     }
+
+    @Override
+    public String toString() {
+        return "Instructor{" +
+                "employeeId='" + employeeId + '\'' +
+                '}';
+    }
 }

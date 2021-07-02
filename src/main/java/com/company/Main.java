@@ -30,5 +30,15 @@ public class Main {
 
         System.out.println(studentOne.learn());
         System.out.println(instructorOne.teach());
+
+        // Person overrides it's inherited .toString() method (from Objects)
+        System.out.println(personOne);
+        // Student overrides it's inherited .toString() method (from Person)
+        System.out.println(studentOne);
+        // Instructor overrides it's inherited .toString() method (From Person)
+        System.out.println(instructorOne);
+
+        // what happens if we removed the Student .toString() method?
+        System.out.println(studentOne);
     }
 }
